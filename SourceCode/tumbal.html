@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Pilih Kursi</title>
+</head>
+<body>
+
+  <h2>Pilih Kursi</h2>
+
+  <form action="/submit-seats" method="post">
+    <table border="1" cellpadding="10">
+      <thead>
+        <tr>
+          <th></th>
+          <th>1</th>
+          <th>2</th>
+          <th>3</th>
+          <th>4</th>
+          <th>5</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Baris A -->
+        <tr>
+          <td>A</td>
+          <td><input type="checkbox" name="seat[]" value="A1"></td>
+          <td><input type="checkbox" name="seat[]" value="A2" disabled></td> <!-- merah -->
+          <td><input type="checkbox" name="seat[]" value="A3"></td>
+          <td><input type="checkbox" name="seat[]" value="A4"></td>
+          <td><input type="checkbox" name="seat[]" value="A5" disabled></td> <!-- merah -->
+        </tr>
+        <!-- Baris B -->
+        <tr>
+          <td>B</td>
+          <td><input type="checkbox" name="seat[]" value="B1"></td>
+          <td><input type="checkbox" name="seat[]" value="B2"></td>
+          <td><input type="checkbox" name="seat[]" value="B3" disabled></td> <!-- merah -->
+          <td><input type="checkbox" name="seat[]" value="B4"></td>
+          <td><input type="checkbox" name="seat[]" value="B5"></td>
+        </tr>
+        <!-- Baris C -->
+        <tr>
+          <td>C</td>
+          <td><input type="checkbox" name="seat[]" value="C1"></td>
+          <td><input type="checkbox" name="seat[]" value="C2"></td>
+          <td><input type="checkbox" name="seat[]" value="C3"></td>
+          <td><input type="checkbox" name="seat[]" value="C4" disabled></td> <!-- merah -->
+          <td><input type="checkbox" name="seat[]" value="C5"></td>
+        </tr>
+        <!-- Tambahkan baris D, E, dst sesuai kebutuhan -->
+      </tbody>
+    </table>
+
+    <br>
+    <button type="submit">Pesan Kursi</button>
+  </form>
+
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesan Tiket</title>
+</head>
+<body>
+    <h1>Pesan Tiket</h1>
+    <p>Isi form dibawah untuk melakukan pemesanan tiket secara online</p>
+
+<!-- Fungsi Isi-->
+    <form action="/submit" method="post">
+
+        <label for="nama"> Nama Lengkap </label><br>
+        <input type="text" id="nama" name="nama"><br>
+
+        <label for="email"> Email</label><br>
+        <input type="email" id="email" name="email"><br>
+
+        <label for="film">Pilih Film</label><br>
+        <select id="film" name="film">
+            <option value="kungfupanda">KungFu Panda 3 Movie</option>
+            <option value="Man-Of-Steel">Man Of Steel 2013</option>
+            <option value="Man-Of-Steel">BoboiBoy Movie 2</option>
+        </select><br>
+
+        <label for="tanggal">Tanggal</label><br>
+        <input type="date" id="tanggal" name="tanggal"><br>
+
+        <label for="jam">Jam Tayang</label><br>
+        <select id="jam" name="jam">
+            <option value="10:00">10:00</option>
+            <option value="13:15">13:15</option>
+            <option value="17:25">17:25</option>
+            <option value="20:00">20:00</option>
+        </select> <br>
+
+        <label for="jumlah">Jumlah Tiket</label><br>
+        <input type="number" id="jumlah" name="jumlah" value="1" min="1"><br>
+
+        <button type="submit"> Pesan Sekarang</button>
+
+        <table border="1" cellpadding="10">
+            <thead>
+                <tr>
+                    <th>1</th>
+                    <th>2</th>
+                    <th>3</th>
+                    <th>4</th>
+                    <th>5</th>
+                    <th>6</th>
+                    <th>7</th>
+                    <th>8</th>
+                    <th>9</th>
+                    <th>10</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>A</td>
+                    <td><input type="checkbox" name="seat[]" value="A1"></td>
+                    <td><input type="checkbox" name="seat[]" value="A2" disabled></td>
+                </tr>
+                <tr>
+                    <td>B</td>
+                    <td><input type="checkbox" name="seat[]" value="B1"></td>
+                    <td><input type="checkbox" name="seat[]" value="B2" disabled></td>
+                </tr>
+                <tr>
+                    <td>C</td>
+                    <td><input type="checkbox" name="seat[]" value="C1"></td>
+                    <td><input type="checkbox" name="seat[]" value="C2" disabled></td>
+                </tr>
+                <tr>
+                    <td>D</td>
+                    <td><input type="checkbox" name="seat[]" value="D1"></td>
+                    <td><input type="checkbox" name="seat[]" value="D2" disabled></td>
+                </tr>
+                <tr>
+                    <td>E</td>
+                    <td><input type="checkbox" name="seat[]" value="E1"></td>
+                    <td><input type="checkbox" name="seat[]" value="E2" disabled></td>
+                </tr>
+                <tr>
+                    <td>F</td>
+                    <td><input type="checkbox" name="seat[]" value="F1"></td>
+                    <td><input type="checkbox" name="seat[]" value="F2" disabled></td>
+                </tr> 
+                <tr>
+                    <td>G</td>
+                    <td><input type="checkbox" name="seat[]" value="G1"></td>
+                    <td><input type="checkbox" name="seat[]" value="G2" disabled></td>
+                </tr>                                                                                               
+            </tbody>
+        </table>
+    </form>
+
+
+
+</body>
+</html>
