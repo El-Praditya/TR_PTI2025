@@ -1,0 +1,107 @@
+body{
+    background: radial-gradient(circle at center, #610606, #000);
+    font-family: 'Segoe UI', sans-serif;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    color: whitesmoke;
+    margin: 0;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.kotak{
+    margin: 10% auto;
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.15);
+    padding:50px;
+    border-radius: 25px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.judul{
+    text-align: center;
+    color:whitesmoke;
+    line-height: 40px;
+    margin:auto;
+    margin-top: 100px;
+    
+}
+
+.isian input, select{
+    border: 0px;
+    border-radius: 5px;
+    background-color: rgb(247, 246, 246);
+    box-sizing: border-box;
+    width: 80vh;
+    padding: 12px;
+    margin-top: 5px;
+    margin-bottom: 18px;
+}
+
+button{
+    width: 80vh;
+    height: 50px;
+    color:whitesmoke;
+    border: 0px;
+    border-radius: 5px;
+    background-color: rgb(163, 32, 32);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+button:hover{
+    background-color: rgb(185, 60, 60);
+}
+
+.navbar {
+    position: absolute;
+    display: flex;
+    top: 0;
+    left: 0;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #111;
+    padding: 10px 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 30px;
+    margin-right: 10px;
+}
+
+.ctew {
+    color: yellow;
+    font-weight: bold;
+}
+
+.max {
+    color: white;
+    font-weight: bold;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-menu li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/* Responsif */
+@media (max-width: 600px) {
+}
