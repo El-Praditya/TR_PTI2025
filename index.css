@@ -1,0 +1,117 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #000;
+    color: white;
+    font-family: 'Segoe UI', sans-serif;
+    overflow-x: hidden;
+    position: relative;
+}
+
+/* Soft Elegant Blobs */
+.blob {
+    position: absolute;
+    width: 520px;
+    height: 520px;
+    border-radius: 50%;
+    filter: blur(220px);
+    opacity: 0.22;
+    z-index: 0;
+    animation: softMove 16s ease-in-out infinite;
+}
+
+.blob1 {
+    background: #3a0000;   /* merah gelap */
+    top: -200px;
+    left: -200px;
+}
+
+.blob2 {
+    background: #5c0000;   /* merah elegan */
+    bottom: -200px;
+    right: -200px;
+    animation-delay: -8s;
+}
+
+@keyframes softMove {
+    0%   { transform: scale(1) translate(0, 0); }
+    40%  { transform: scale(1.2) translate(45px, -30px); }
+    70%  { transform: scale(1.08) translate(-35px, 45px); }
+    100% { transform: scale(1) translate(0, 0); }
+}
+
+/* Header minimalis */
+header {
+    padding: 25px;
+    z-index: 10;
+    text-align: center;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.ctew {
+    color: #FFD700; /* kuning brand kamu */
+}
+
+.brand {
+    font-size: 28px;
+}
+
+/* Tengah Halaman */
+.center-box {
+    text-align: center;
+    margin-top: 12vh;
+    z-index: 10;
+    position: relative;
+}
+
+.center-box h1 {
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+.highlight {
+    color: #FFD700;
+}
+
+.subtext {
+    font-size: 18px;
+    opacity: 0.9;
+    margin-bottom: 40px;
+}
+
+/* Tombol Menu */
+.menu-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 250px;
+    margin: auto;
+}
+
+.btn {
+    padding: 12px;
+    background: #e50914;
+    border-radius: 8px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    transition: 0.2s;
+}
+
+.btn:hover {
+    background: #b00610;
+    transform: translateY(-2px);
+}
