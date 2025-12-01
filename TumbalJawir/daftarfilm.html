@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Daftar Film - CTew-21</title>
+    <link rel="stylesheet" href="daftarfilm.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
+</head>
+    <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a href="home.html" class="navbar-brand">
+            <i class="fa-solid fa-film me-2"></i>
+            <span><span class="ctew">CTew</span>21</span>
+        </a>
+
+        <button class="navbar-toggler" onclick="toggleMenu(this)">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <ul class="nav-menu">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="tentangkami.html">Tentang Kami</a></li>
+            <li><a href="daftarfilm.html" class="active">Daftar Film</a></li>
+            <li><a href="pesan.html">Pesan Tiket</a></li>
+        </ul>
+    </nav>
+
+    <h1>Film Sedang Tayang</h1>
+
+    <div class="film-container">
+        <div class="film-card">
+            <img src="assets/boboiboy2.gif" />
+            <h2>BoboiBoy Movie 2</h2>
+                <p>Rating 5.0</p>
+                <p>Sci-Fi, Adventure, Action, Animation, Comedy, 3D</p>
+                <p>120 Menit</p>
+            <button onclick="window.location.href='pesan.html'">Pesan Tiket</button>
+        </div>
+
+        <div class="film-card">
+            <img src="assets/kungfuPanda.gif" />
+            <h2>KungFU Panda 3</h2>
+                <p>Rating 4.6</p>
+                <p>Animation, Adventure, Comedy, 3D</p>
+                <p>106 Menit</p>
+            <button onclick="window.location.href='pesan.html'">Pesan Tiket</button>
+        </div>
+
+        <div class="film-card">
+            <img src="assets/manOfsteel.gif" />
+            <h2>Man Of Steel</h2>
+                <p>Rating 4.8</p>
+                <p>Adventure, Action, Sci-Fi, Thriller</p>
+                <p>124 Menit</p>
+            <button onclick="window.location.href='pesan.html'">Pesan Tiket</button>
+        </div>
+
+        <div class="film-card">
+            <img src="assets/mrRobot.gif" />
+            <h2>Mr. Robot (Season 1)</h2>
+                <p>Rating 4.3</p>
+                <p>Adventure, Action, Drama</p>
+                <p>262 Menit</p>
+            <button onclick="window.location.href='pesan.html'">Pesan Tiket</button>
+        </div>
+    </div>
+
+    <script>
+    function toggleMenu(btn) {
+        const menu = document.querySelector(".nav-menu");
+        menu.classList.toggle("active");
+        btn.classList.toggle("active");
+        }
+    </script>
+
+    </body>
+</html>
