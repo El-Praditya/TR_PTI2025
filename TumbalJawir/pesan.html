@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pesan Tiket - CTew-21</title>
+    <link rel="stylesheet" href="pesan.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+
+
+    <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a href="home.html" class="navbar-brand">
+            <i class="fa-solid fa-film me-2"></i>
+            <span><span class="ctew">CTew</span><span class="max">21</span></span>
+        </a>
+
+        <button class="navbar-toggler" onclick="toggleMenu(this)">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <ul class="nav-menu">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="tentangkami.html">Tentang Kami</a></li>
+            <li><a href="daftarfilm.html">Daftar Film</a></li>
+            <li><a href="pesan.html" class="active">Pesan Tiket</a></li>
+        </ul>
+    </nav>
+
+    <main class="pesan-container">
+        <h1>Pesan Tiket</h1>
+        <form>
+            <label>Nama:</label>
+            <input type="text" placeholder="Masukkan Nama" />
+
+            <label>Film:</label>
+            <select>
+                <option>BoboiBoy Movie 2</option>
+                <option>KungFu Panda 3</option>
+                <option>Man Of Steel</option>
+                <option>Mr. Robot (Season 1)</option>
+            </select>
+
+            <label>Jumlah Tiket:</label>
+            <input type="number" min="1" max="10" />
+            <button type="submit">Pesan Sekarang</button>
+        </form>
+    </main>
+
+        <script>
+            function toggleMenu(btn) {
+            const menu = document.querySelector(".nav-menu");
+            menu.classList.toggle("active");
+            btn.classList.toggle("active");
+        }
+        </script>
+    </body>
+</html>
