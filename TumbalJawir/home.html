@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>CTew-21 - Home</title>
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
+<!-- Custom CSS -->
+<link rel="stylesheet" href="home.css" />
+
+</head>
+    <body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+            <div class="navbar-left">
+                <a href="home.html" class="navbar-brand d-flex align-items-center">
+                    <i class="fa-solid fa-film me-2"></i>
+                    <span><span class="ctew">CTew</span class="max">21</span>
+                </a>
+            </div>
+
+    <button class="navbar-toggler" type="button" onclick="toggleMenu(this)">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+        <ul class="nav-menu">
+            <li><a href="home.html" class="active">Home</a></li>
+            <li><a href="tentangkami.html">Tentang Kami</a></li>
+            <li><a href="daftarfilm.html">Daftar Film</a></li>
+            <li><a href="pesan.html">Pesan Tiket</a></li>
+        </ul>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="hero-content text-center">
+            <h1>Selamat Datang di <span class="ctew21">CTew-21</span></h1>
+            <p>
+                Nikmati pengalaman menonton film terbaru dengan audio dan video
+                berkualitas tinggi. Pesan tiket atau streaming untuk sensasi bioskop
+                tak terlupakan.
+            </p>
+            <div class="hero-buttons">
+                <a href="daftarfilm.html" class="btn red">Daftar Film</a>
+                <a href="pesan.html" class="btn yellow">Pesan Tiket</a>
+            </div>
+        </div>
+    </section>
+
+        <script>
+            function toggleMenu(btn) {
+            document.querySelector(".nav-menu").classList.toggle("active");
+            btn.classList.toggle("active");
+            }
+        </script>
+    </body>
+</html>
