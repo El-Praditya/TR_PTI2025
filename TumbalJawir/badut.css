@@ -1,0 +1,72 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #0f0f0f;
+    font-family: Arial, sans-serif;
+    color: white;
+    padding: 30px;
+}
+
+.container {
+    max-width: 400px;
+    margin: auto;
+}
+
+/* Wrapper agar ada icon dropdown */
+.select-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+/* Icon arrow */
+.select-wrapper::after {
+    content: "\f0d7"; /* Font Awesome chevron-down */
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #ccc;
+    pointer-events: none;
+}
+
+/* Select styling */
+select {
+    width: 100%;
+    padding: 12px 15px;
+    background: #181818;
+    color: #fff;
+    border: 2px solid #303030;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    appearance: none;
+    outline: none;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+/* Hover */
+select:hover {
+    border-color: #FFD700;
+}
+
+/* Fokus */
+select:focus {
+    border-color: #e50914;
+    box-shadow: 0 0 8px rgba(229, 9, 20, 0.6);
+}
+
+/* Option styling dalam dropdown */
+select option {
+    background: #1c1c1c;
+    color: #ffffff;
+    padding: 10px;
+    font-size: 15px;
+}

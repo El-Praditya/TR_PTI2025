@@ -1,4 +1,51 @@
-/* RESET & GENERAL */
+/* LOGIN REGISTER*/
+/* Tombol login-register pojok kanan atas */
+.auth-container {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+
+    display: flex;
+    flex-direction: column; /* bertumpuk vertikal */
+    align-items: flex-end;  /* rata kanan */
+    gap: 8px;               /* jarak antara hamburger dan tombol */
+}
+
+/* pastikan hamburger tidak pindah posisi */
+.navbar-toggler {
+    position: relative;
+    z-index: 20;
+}
+
+/* Tombol login-register */
+.auth-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.btn-auth {
+    padding: 8px 14px;
+    background: #222;
+    color: #fff;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.btn-auth:hover {
+    background: #444;
+}
+
+.btn-auth.register {
+    background: #e53935;
+}
+
+.btn-auth.register:hover {
+    background: #b71c1c;
+}
+/* end */
+
 * { margin:0; padding:0; box-sizing:border-box; }
 body {
     font-family:'Segoe UI', sans-serif;
@@ -10,7 +57,6 @@ body {
     transition: filter 0.4s ease;
 }
 
-/* BLOBS FLUID */
 body::before,
 body::after {
     content:"";

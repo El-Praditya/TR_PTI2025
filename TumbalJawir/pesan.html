@@ -8,8 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
 </head>
 
-
-    <body>
+<body>
     <!-- Navbar -->
     <nav class="navbar">
         <a href="home.html" class="navbar-brand">
@@ -33,12 +32,13 @@
 
     <main class="pesan-container">
         <h1>Pesan Tiket</h1>
-        <form>
+
+        <form onsubmit="pesanTiket(event)">
             <label>Nama:</label>
-            <input type="text" placeholder="Masukkan Nama" />
+            <input id="nama" type="text" placeholder="Masukkan Nama" />
 
             <label>Film:</label>
-            <select>
+            <select id="film">
                 <option>BoboiBoy Movie 2</option>
                 <option>KungFu Panda 3</option>
                 <option>Man Of Steel</option>
@@ -46,17 +46,34 @@
             </select>
 
             <label>Jumlah Tiket:</label>
-            <input type="number" min="1" max="10" />
+            <input id="jumlah" type="number" min="1" max="10" />
+
             <button type="submit">Pesan Sekarang</button>
         </form>
     </main>
 
-        <script>
-            function toggleMenu(btn) {
-            const menu = document.querySelector(".nav-menu");
-            menu.classList.toggle("active");
-            btn.classList.toggle("active");
+    <script>
+    function pesanTiket(event) {
+        event.preventDefault(); 
+
+        const nama = document.getElementById("nama").value;
+        const film = document.getElementById("film").value;
+        const jumlah = document.getElementById("jumlah").value;
+
+        if (!nama || !jumlah) {
+            alert("Harap mengisi semua data terlebih dahulu!");
+            return;
         }
-        </script>
-    </body>
+
+        alert(
+            "📩 PESANAN BERHASIL!\n\n" +
+            "Nama: " + nama + "\n" +
+            "Film: " + film + "\n" +
+            "Jumlah Tiket: " + jumlah + "\n\n" +
+            "Terima kasih sudah memesan!"
+        );
+    }
+    </script>
+
+</body>
 </html>
