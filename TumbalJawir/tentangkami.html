@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tentang Kami - CTew-21</title>
+    <link rel="stylesheet" href="tentangkami.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+
+    <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a href="home.html" class="navbar-brand">
+            <i class="fa-solid fa-film me-2"></i>
+            <span><span class="ctew">CTew</span><span class="max">21</span></span>
+        </a>
+
+        <button class="navbar-toggler" onclick="toggleMenu(this)">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <ul class="nav-menu">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="tentangkami.html" class="active">Tentang Kami</a></li>
+            <li><a href="daftarfilm.html">Daftar Film</a></li>
+            <li><a href="pesan.html">Pesan Tiket</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="about-container">
+        <h1>Tentang Kami</h1>
+        <p class="desc">
+            CTew-21 adalah bioskop modern dengan konsep all-in-one: streaming video,
+            pemesanan tiket online, dan daftar film terbaru.
+        </p>
+
+        <div class="contact-card">
+            <h3>Kontak Kami</h3>
+                <p><i class="fa-solid fa-phone"></i> +62 823-8776-9408</p>
+                <p><i class="fa-solid fa-envelope"></i> info@ctew21.id</p>
+        </div>
+
+        <h3 class="sos-title">Social Media</h3>
+        <div class="social-container">
+            <i class="fa-brands fa-whatsapp"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-x-twitter"></i>
+            <i class="fa-brands fa-telegram"></i>
+        </div>
+    </main>
+
+        <script>
+            function toggleMenu(btn) {
+            const menu = document.querySelector(".nav-menu");
+            menu.classList.toggle("active");
+            btn.classList.toggle("active");
+        }
+        </script>
+    </body>
+</html>
