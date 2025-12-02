@@ -253,6 +253,10 @@ body::after {
     font-weight: 600;
 }
 
+.pesan-container select option{
+    background: #0d0d0d;
+}
+
 /* ============================= */
 /* RESPONSIVE HERO                */
 /* ============================= */
