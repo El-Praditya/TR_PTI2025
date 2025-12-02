@@ -39,10 +39,12 @@
 
             <label>Film:</label>
             <select id="film">
-                <option>BoboiBoy Movie 2</option>
-                <option>KungFu Panda 3</option>
+                <option >BoboiBoy Movie 2</option>
+                <option>Kung-Fu Panda 3</option>
                 <option>Man Of Steel</option>
                 <option>Mr. Robot (Season 1)</option>
+                <option>Batman Dark Knight</option>
+                <option>The God Father 1</option>
             </select>
 
             <label>Jumlah Tiket:</label>
@@ -73,6 +75,12 @@
             "Terima kasih sudah memesan!"
         );
     }
+
+    function toggleMenu(btn) {
+        const menu = document.querySelector(".nav-menu");
+        menu.classList.toggle("active");
+        btn.classList.toggle("active");
+        }
     </script>
 
 </body>
